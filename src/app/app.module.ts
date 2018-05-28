@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { HighlighterDirective } from './highlighter.directive';
+import { TimeAgoPipe } from './time-ago.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteComponent,
     QuoteDetailsComponent,
-    HighlighterDirective
+    HighlighterDirective,
+    TimeAgoPipe
   ],
   imports: [
     BrowserModule
