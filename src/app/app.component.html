@@ -1,9 +1,6 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    {{ title | uppercase }} By: Ephantus!
-  </h1>
-  <ul>
-    <li *ngFor='let quote of quotes'>{{quotes.quote}}</li>
-  </ul>
+<h1>My Quotes</h1>
+<hr>
 
+<ol>
+  <li *ngFor='let quote of quotes'>{{quote.author}}</li>
+</ol>
