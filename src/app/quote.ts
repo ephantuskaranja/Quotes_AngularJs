@@ -1,3 +1,4 @@
+import { Time } from "@angular/common";
 
 export class Quote {
     public showAuthor:boolean;
