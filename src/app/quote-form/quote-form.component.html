@@ -1,0 +1,38 @@
+<div class="container-fluid">
+  <div class="row">
+    <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+      <div class="form-group">
+        <label for="Author">Author</label>
+        <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author="ngModel">
+        <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+          <p> author name is Required</p>
+        </div>
+      </div>
+      <div class="form-group">
+
+        <label for="Quote">Quote</label>
+        <textarea required class="form-control" id="quote" [(ngModel)]="newQuote.quote" name="quote" #quote="ngModel" rows="4"></textarea>
+        <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+          <p> quote is Required</p>
+        </div>
+      </div>
+      <div class="form-group">
+
+        <label for="postedBy">Posted By</label>
+        <input type="text" required class="form-control" id="postedby" [(ngModel)]="newQuote.postedBy" name="postedBy" #postedBy="ngModel">
+        <div [hidden]="postedBy.valid || postedBy.pristine" class="alert alert-danger">
+          <p> posting name is Required</p>
+        </div>
+
+      </div>
+      <div class="form-group">
+        <label for="postedon">Posted on</label>
+        <input type='date' id="timer" [(ngModel)]="newQuote.timer" name="timer" #timer="ngModel" required>
+        <div [hidden]="timer.valid || timer.pristine" class="alert alert-danger">
+          <p> please input date</p>
+        </div>
+        <button type="submit" class="btn btn-success btn-lg">Add Quote</button>
+      </div>
+    </form>
+  </div>
+</div>

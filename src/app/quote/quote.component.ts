@@ -15,12 +15,17 @@ export class QuoteComponent implements OnInit {
   toogleDetails(index) {
     this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
   }
-  completeQuote(isComplete,index){
-    if (isComplete){
-        this.quotes.splice(index,1);
-        }
-        }
+  completeQuote(isComplete, index) {
+    if (isComplete) {
+      this.quotes.splice(index, 1);
+    }
+  }
+  addNewQuote(quote) {
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength + 1;
+    this.quotes.push(quote)
 
+  }
   constructor() { }
 
   ngOnInit() {
