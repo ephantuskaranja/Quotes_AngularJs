@@ -12,10 +12,16 @@ export class QuoteComponent implements OnInit {
     new Quote(2, 'what a man', 'cages', 'ephantus', new Date),
     new Quote(3, 'all of business', 'timephy', 'ephantus', new Date),
   ]
+  upvotesCreator(i){
+    this.quotes[i].upVotes+=1;
+  }
+  downvotesCreator(i){
+    this.quotes[i].downVotes+=1;
+  }
   toogleDetails(index) {
     this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
   }
-  completeQuote(isComplete, index) {
+  deleteQuote(isComplete, index) {
     if (isComplete) {
       this.quotes.splice(index, 1);
     }

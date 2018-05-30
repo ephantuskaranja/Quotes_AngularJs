@@ -1,18 +1,18 @@
-<h1>My Goals</h1>
+<h1>Quotes by Ephantus!</h1>
 
 <div class="container">
 
     <div class="row">
         <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
     </div>
-    
+
 </div>
-
-
 <ul>
   <div *ngFor='let quote of quotes;let i = index'>
     <li id="{{i}}" appHighlighter>{{quote.quote}} created on {{quote.timer}} </li>
     <button (click)='toogleDetails(i)'>Toogle Details</button>
+    <button (click)='upvotesCreator(i)'>up Vote:{{ quote.upVotes }}</button>
+    <button (click)='downvotesCreator(i)'>down vote:{{ quote.downVotes }}</button>
 
     <app-quote-details *ngIf="quote.showAuthor" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
 
