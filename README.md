@@ -1,6 +1,10 @@
 # Quotes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
+Quotes is an angular application built on angular CLI. User add Quotes to the apps by entering the author name, the quote and the user name posting it. The system then prints all the quotes added. On clicking on any quote, the quote gets highlighted. User can click upvote button to like the quote or click down vote to dislike it. The total votes are shown on the app. The most up voted quote is highlighted when the app loads.  
+
+## Contributions
+ In case of any contributions, fork the repo containing Quote files on
+  [https://github.com/ephantuskaranja/Quotes_AngularJs.git]
 
 ## Development server
 
@@ -21,6 +25,10 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Live site
+  [https://github.io/ephantuskaranja/Quotes_AngularJs.git]
+## License
+Copyright (MIT) 2018.
 
 ## Further help
 
