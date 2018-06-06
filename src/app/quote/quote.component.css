@@ -1,22 +1,32 @@
 /* Application-wide Styles */
-h1 {
+#qts{
+  background-color: black;
+}
+.jumbotron{
+  text-align: center;
+  background-color: black;
+  font-style: oblique;
+  color: white;
+}
+
+/* h1 {
   color: #369;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 250%;
-}
+  font-size: 250%; */
+/* }
 h2, h3 {
   color: #444;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
-}
+} */
 body {
-  margin: 2em;
+  color: white;
 }
-body, input[text], button {
+/* body, input[text], button {
   color: #369;
   font-family: Cambria, Georgia;
   font-weight: bold;
-}
+} */
 label {
   color: #369;
 }
@@ -24,4 +34,13 @@ label {
 * {
   font-family: Arial, Helvetica, sans-serif;
   color: black;
+}
+.container{
+  background-image: url("/assets/quotesbg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.clr {
+  color: white;
 }
