@@ -11,10 +11,10 @@
   <ul>
     <div class="clr">
       <div *ngFor='let quote of quotes;let i = index'>
-        <li id="{{i}}" appHighlighter>{{quote.quote}} created on {{quote.timer}} </li>
-        <button (click)='toogleDetails(i)'>Toogle Details</button>
-        <button (click)='upvotesCreator(i)'>up Vote:{{ quote.upVotes }}</button>
-        <button (click)='downvotesCreator(i)'>down vote:{{ quote.downVotes }}</button>
+        <li class="quotes" id="{{i}}" appHighlighter>{{quote.quote}} created on {{quote.timer}} </li>
+        <button (click)='toogleDetails(i)' id="btn1">Toogle Details</button>
+        <button (click)='upvotesCreator(i)' id="btn2">up Vote:{{ quote.upVotes }}</button>
+        <button (click)='downvotesCreator(i)'id="btn3">down vote:{{ quote.downVotes }}</button>
         <app-quote-details *ngIf="quote.showAuthor" [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
       </div>
     </div>

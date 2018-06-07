@@ -1,3 +1,10 @@
 #quotes{
-  color: teal;
+  color: white;
+  background-color: black;
+}
+#btn{
+  background-color: coral;
+  color: white;
+  border: none;
+  border-radius: 85px;
 }

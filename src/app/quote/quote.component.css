@@ -44,3 +44,26 @@ label {
 .clr {
   color: white;
 }
+.details{
+  background-image: url("/assets/quotesbg2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0%;
+  width: 100%;
+  margin-top: 5vh;
+  color: white;
+}
+#btn1, #btn2, #btn3 {
+  background-color: teal;
+  font-size: 20px;
+  border-radius: 45px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin: 5px;
+  color: black;
+}
+.quotes{
+  color: white;
+}
